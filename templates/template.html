@@ -1,0 +1,27 @@
+<!-- templates/order_confirmation_email.html -->
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Підтвердження замовлення</title>
+</head>
+<body>
+    <h1>Дякуємо за ваше замовлення!</h1>
+    <p>Ваше замовлення номер {{ order.id }} підтверджено.</p>
+
+    <h2>Список продуктів:</h2>
+    <ul>
+        {% for item in order.items.all %}
+            <li>{{ item.product.name }} - {{ item.quantity }} шт.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Реквізити:</h2>
+    <p>Ім'я: {{ order.customer.name }}</p>
+    <p>Адреса: {{ order.customer.address }}</p>
+    <p>Телефон: {{ order.customer.phone }}</p>
+
+    <p>Дякуємо, що обрали нас!</p>
+</body>
+</html>
