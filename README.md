@@ -1,8 +1,8 @@
 ```
 cd online_shop
-python -m venv venv
-.\venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+docker compose up --build
 ```
+
+Creds for admin on http://localhost:8000/admin/:
+Phone: 1234567890
+Password: admin
