@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-zz3)^^dvg#%tp(slc3pwwzj)43#pd^*@^xa-e9$l2bop0wz3@3"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "True").lower() in ("true", "1", "yes")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",") if os.getenv("ALLOWED_HOSTS") else ["localhost", "127.0.0.1", "0.0.0.0"]
 
 
 # Application definition
@@ -97,11 +97,11 @@ WSGI_APPLICATION = "online_shop.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "onlineshop_db",  # Назва вашої бази даних
-        "USER": "postgres",  # Ваш користувач PostgreSQL
-        "PASSWORD": "21211488",  # Ваш пароль
-        "HOST": "localhost",  # Залиште 'localhost', якщо PostgreSQL на локальному комп'ютері
-        "PORT": "5432",  # Стандартний порт PostgreSQL
+        "NAME": os.getenv("DATABASE_NAME", "onlineshop_db"),
+        "USER": os.getenv("DATABASE_USER", "postgres"),
+        "PASSWORD": os.getenv("DATABASE_PASSWORD", "21211488"),
+        "HOST": os.getenv("DATABASE_HOST", "localhost"),
+        "PORT": os.getenv("DATABASE_PORT", "5432"),
     }
 }
 
@@ -140,7 +140,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

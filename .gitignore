@@ -1,0 +1,44 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Environments
+venv/
+ENV/
+.env
+
+# Django
+*.sqlite3
+db.sqlite3
+/staticfiles/
+media/
+*.pot
+*.py[cod]
+__pycache__/
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Docker
+*.dockerignore
+docker-compose.override.yml
+
+# Byte-compiled / cache
+*.py[cod]
+__pycache__/
+*.so
+
+# Misc
+.DS_Store
+*.swp
