@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #6439FF; /* Колір фону */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тінь */
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: white; /* Колір тексту логотипу */
+  }
+  
+  .nav {
+    flex: 2;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: space-around; /* Розташування пунктів меню */
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    margin-right: 10px;
+    color: white; /* Колір тексту пунктів меню */
+  }
+  
+  .auth-buttons {
+    flex: 1;
+    background-color: #6439FF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Вирівнюємо кнопки праворуч */
+  }
+  
+  .auth-button {
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: #6439FF;
+    padding: 8px 15px; /* Внутрішні відступи */
+    border-radius: 5px; /* Закруглення кутів кнопок */
+    margin-left: 10px; /* Відступ між кнопками */
+  }
+  
+  .header-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+.nav-item, .auth-button svg{
+  width: 24px;
+  margin-top: 4px;
+  height: 24px;
+}
+
+.search-toggle-button,
+.close-button {
+  background-color: #007bff;
+  color: white; /* Button text color */
+  border: none;
+  padding: 8px 12px;
+  margin-left: 10px; /* Spacing between buttons */
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.search-toggle-button-nav{
+  background-color: #6439FF;
+  color: white; /* Button text color */
+  border: none;
+  width: 35px;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+.search-toggle-button:hover,
+.auth-button:hover,
+.close-button:hover {
+
+}
+
+.search-container {
+  position: absolute; /* Position absolute to avoid shifting layout */
+  top: 60px; /* Adjust based on header height */
+  left: 20px; /* Align with the header */
+  background-color: white; /* Background color for search input */
+  padding: 10px; /* Padding around the search input */
+  border: 1px solid #ccc; /* Border around search input */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 5px; /* Space between input and button */
+  border: 1px solid #ccc; /* Input border color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white; /* White text */
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

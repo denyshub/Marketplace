@@ -1,0 +1,159 @@
+.profile {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .profile h2 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .profile div {
+    margin-bottom: 20px;
+  }
+  
+  .profile div strong {
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  
+  .profile div {
+    font-size: 1.1rem;
+    color: #6c6c6c;
+    line-height: 1.6;
+  }
+  
+  .profile h3 {
+    font-size: 1.7rem;
+    margin-top: 40px;
+    color: #2b2b2b;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .profile ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .profile ul li {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+  }
+  
+  .profile ul li span {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .profile ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .profile ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .profile p {
+  
+   
+    font-size: 1rem;
+  }
+  
+  .profile .order-items {
+    margin-top: 15px;
+  }
+  
+  .profile .order-items ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .profile .order-items ul li {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile .order-items .product-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .profile .order-items .product-price {
+    color: #888;
+    font-size: 0.95rem;
+  }
+  
+  .profile .loading {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .profile {
+      padding: 20px;
+    }
+  
+    .profile h2 {
+      font-size: 1.8rem;
+    }
+  
+    .profile h3 {
+      font-size: 1.4rem;
+    }
+  
+    .profile ul li {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+  .status-span{
+    color: green;
+  }
+
+  .profile input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .profile button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .profile button:hover {
+    opacity: 0.8;
+  }

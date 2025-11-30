@@ -1,0 +1,52 @@
+.login-container__unique {
+    /* Додайте стилі для контейнера логіну */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додаємо тінь */
+    margin-top: 100px;
+  }
+  
+  .login-title__unique {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form__unique {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group__unique {
+    padding: 0px 30px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-label__unique {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-input__unique {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-button__unique {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .login-button__unique:hover {
+    background-color: #0056b3;
+  }
+  

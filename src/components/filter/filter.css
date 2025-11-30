@@ -1,0 +1,145 @@
+/* styles.css */
+
+/* Загальні стилі для контейнера фільтра */
+.filter-container {
+  background-color: #ffffff; /* Білий фон */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Легка тінь */
+  padding: 24px; /* Внутрішній відступ */
+  max-width: 50vh; /* Максимальна ширина */
+  
+  max-height: 600px; /* Задайте висоту, яка підходить для вашого дизайну */
+  overflow-y: auto; /* Додає вертикальну прокрутку */
+}
+
+/* Стиль заголовка фільтра */
+.filter-title {
+  font-size: 1.5rem; /* Розмір шрифту заголовка */
+  font-weight: 700; /* Жирний шрифт */
+  margin-bottom: 16px; /* Відступ знизу */
+  color: #333; /* Темно-сірий колір */
+}
+
+/* Стилі для міток полів вводу */
+.filter-label {
+  display: block; /* Відображення міток як блоки */
+  margin-top: 10px;
+  margin-bottom: 5px; /* Відступ знизу */
+  font-weight: 600; /* Жирний шрифт */
+  font-size: 20px;
+  color: #303030; /* Світло-сірий колір */
+}
+
+/* Стиль для інпутів */
+.filter-input {
+  width: 95%; /* Ширина на 100% */
+  padding: 12px; /* Внутрішній відступ */
+  border: 1px solid #ccc; /* Сірий контур */
+  border-radius: 8px; /* Заокруглені краї */
+  transition: border-color 0.3s; /* Анімація для зміни кольору */
+}
+
+/* Стиль для фокусу на інпуті */
+.filter-input:focus {
+  border-color: #007bff; /* Синій колір при фокусі */
+  outline: none; /* Прибрано обведення */
+}
+
+/* Стиль для чекбоксів */
+.filter-checkbox {
+  display: flex; /* Гнучке відображення */
+  align-items: center; /* Вертикальне центрування */
+  margin-bottom: 10px; /* Відступ знизу */
+}
+
+/* Стиль для чекбоксів */
+.checkbox-input {
+  margin-right: 8px; /* Відступ між чекбоксом та текстом */
+}
+
+/* Стиль для кнопок */
+.filter-button {
+  display: inline-flex; /* Відображення кнопок */
+  align-items: center; /* Вертикальне центрування */
+  background: #007bff;
+  margin-left: 20px;
+  padding: 10px 16px; /* Внутрішній відступ кнопок */
+  border: none; /* Прибрано обведення */
+  border-radius: 6px; /* Заокруглені краї */
+ color: white;
+ margin-top: 20px;
+  cursor: pointer; /* Курсор у вигляді руки */
+  transition: background-color 0.3s, color 0.3s; /* Анімація для зміни кольору */
+}
+
+/* Стиль для основної кнопки */
+.filter-button--primary {
+  background-color: #007bff; /* Синій фон */
+  color: white; /* Білий текст */
+}
+
+.filter-button--primary:hover {
+  background-color: #0056b3; /* Темніший синій при наведенні */
+}
+
+/* Стиль для кнопки скидання */
+.filter-button--reset {
+  background-color: white; /* Білий фон */
+  color: #333; /* Темно-сірий текст */
+  border: 1px solid #ccc; /* Сірий контур */
+}
+
+.filter-button--reset:hover {
+  background-color: #f0f0f0; /* Світліший фон при наведенні */
+}
+
+/* Стиль для блоків фільтрації */
+.filter-attribute {
+  margin-top: 16px; /* Відступ зверху */
+}
+
+/* Стиль для тексту в чекбоксах */
+.filter-checkbox-text {
+  color: #444; /* Темно-сірий текст для чекбоксів */
+}
+
+.flex-space{
+  display: flex;
+gap: 10px;
+margin-top: 10px;  
+}
+/* filter.css */
+
+.filter-select {
+  padding: 10px; /* Внутрішній відступ */
+  border: 1px solid #ccc; /* Колір рамки */
+  border-radius: 4px; /* Закруглення кутів */
+  width: 100%; /* Ширина */
+  max-width: 300px; /* Максимальна ширина */
+  font-size: 16px; /* Розмір шрифту */
+  background-color: #fff; /* Колір фону */
+  cursor: pointer; /* Курсор при наведенні */
+  transition: border-color 0.3s; /* Анімація при змінах кольору рамки */
+}
+
+.filter-select:focus {
+  outline: none; /* Прибрали стандартне обведення */
+  border-color: #007bff; /* Колір рамки при фокусі */
+}
+
+.filter-select option {
+  padding: 10px; /* Внутрішній відступ для опцій */
+}
+
+.filter-sublabel{font-size: 15px;
+color: #444;
+}
+
+.attribute-item-filter{
+  margin-top: 6px;
+  padding: 4px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+.attr-cont{
+  margin-top: 15px;
+}

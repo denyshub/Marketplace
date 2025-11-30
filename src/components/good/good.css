@@ -1,0 +1,154 @@
+.good-container {
+    width: 237px;
+    background-color: #ffffff; /* Changed to hex for consistency */
+    border-radius: 10px;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.code-text {
+    color: gray;
+    font-size: 13px;
+}
+
+.code-container {
+    text-align: end;
+    width: 100%;
+}
+
+.code-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.good-image {
+    width: 100%; /* Takes full width of the container */
+    height: 250px; /* Sets height of the image */
+    max-height: 250px; /* Sets max height */
+    object-fit: contain; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounds corners */
+}
+
+.name-container {
+    width: 95%;
+    padding: 20px 40px 0 7px;
+}
+
+.good-name {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 15px;
+    color: rgb(110, 110, 110);
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: rgb(200, 200, 200);
+}
+
+.sale-percent {
+    background-color: red;
+    border-radius: 10px;
+    padding: 2px;
+    color: white;
+}
+
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Робить кнопку круглою */
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.add-to-cart-button:hover {
+    background-color: #e0e0e0; /* Колір фону при наведенні */
+    transform: scale(1.1); /* Збільшує кнопку при наведенні */
+
+}
+
+.add-to-cart-button:active {
+    transform: scale(0.95); /* Зменшує кнопку при натисканні */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart-button svg {
+    width: 24px;
+    height: 24px;
+
+    transition: fill 0.3s ease;
+}
+
+
+
+
+
+.good-cart-container {
+    position: absolute; /* Absolute positioning */
+    bottom: 10px; /* Bottom margin */
+    right: 10px; /* Right margin */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto; /* Allows button to size correctly */
+}
+
+.out-of-stock {
+    color: red; /* Text color for out of stock */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center alignment */
+    margin-top: 5px; /* Top margin */
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 20px; /* Adjust as needed */
+    color: #ccc; /* Default color for empty stars */
+}
+.star.filled {
+    color: gold; /* Color for filled stars */
+}
+.star.half {
+    background: linear-gradient(to right, gold 50%, #ccc 50%); /* Gradient for half star */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text fill color transparent */
+    font-size: 20px; /* Ensure size matches */
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  

@@ -1,0 +1,91 @@
+/* categories_list.css */
+
+.categories-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.categories-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; /* Space between tiles */
+    list-style: none;
+    padding: 0;
+}
+
+.categories-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px 20px;
+    width: 150px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+.categories-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.categories-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.categories-list a:hover {
+    color: #0073e6;
+}
+
+.category-link svg{
+    width: 27px;
+    height: 27px;
+}
+
+
+
+.category-block {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Відстань між іконкою та назвою */
+}
+
+.category-icon {
+    width: 27px;
+    height: 27px;
+    display: inline-flex;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-link:hover {
+    color: #0073e6;
+}
+
+.group-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px
+}

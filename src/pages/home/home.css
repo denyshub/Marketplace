@@ -1,0 +1,14 @@
+.home-container {
+    font-family: Arial, sans-serif;
+}
+
+
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
