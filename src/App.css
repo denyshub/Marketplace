@@ -1,75 +1,110 @@
 body {
-  font-family: 'Roboto', sans-serif; /* Встановлюємо шрифт для всього тексту */
+  font-family: 'Roboto', sans-serif;
+  /* Встановлюємо шрифт для всього тексту */
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif; /* Встановлюємо шрифт для заголовків */
-  font-weight: 700; /* Використовуємо товстий варіант */
+  font-family: 'Roboto', sans-serif;
+  /* Встановлюємо шрифт для заголовків */
+  font-weight: 700;
+  /* Використовуємо товстий варіант */
 }
 
 p {
-  font-family: 'Roboto', sans-serif; /* Встановлюємо шрифт для абзаців */
-  font-weight: 400; /* Використовуємо звичайний варіант */
+  font-family: 'Roboto', sans-serif;
+  /* Встановлюємо шрифт для абзаців */
+  font-weight: 400;
+  /* Використовуємо звичайний варіант */
 }
 
 /* Стилі для форми пошуку */
 .search-container {
   display: flex;
   align-items: center;
-  justify-content: centercd;
-  margin: 20px; /* Відступи з усіх боків */
+  justify-content: center;
+  margin: 20px;
+  /* Відступи з усіх боків */
 }
 
 /* Стилі для поля введення */
 .search-input {
-  width: 300px; /* Ширина поля введення */
-  padding: 10px; /* Внутрішні відступи */
-  border: 1px solid #ccc; /* Колір рамки */
-  border-radius: 4px; /* Закруглені кути */
-  font-size: 16px; /* Розмір шрифту */
-  transition: border-color 0.3s; /* Анімація зміни кольору рамки */
+  width: 300px;
+  /* Ширина поля введення */
+  padding: 10px;
+  /* Внутрішні відступи */
+  border: 1px solid #ccc;
+  /* Колір рамки */
+  border-radius: 4px;
+  /* Закруглені кути */
+  font-size: 16px;
+  /* Розмір шрифту */
+  transition: border-color 0.3s;
+  /* Анімація зміни кольору рамки */
 }
 
 .search-input:focus {
-  border-color: #007bff; /* Колір рамки при фокусі */
-  outline: none; /* Вимкнення стандартного обводки */
+  border-color: #007bff;
+  /* Колір рамки при фокусі */
+  outline: none;
+  /* Вимкнення стандартного обводки */
 }
 
 /* Стилі для кнопки пошуку */
 .search-button {
-  padding: 10px 15px; /* Внутрішні відступи */
-  margin-left: 10px; /* Відстань між полем і кнопкою */
-  background-color: #007bff; /* Колір фону кнопки */
-  color: white; /* Колір тексту кнопки */
-  border: none; /* Без рамки */
-  border-radius: 4px; /* Закруглені кути */
-  cursor: pointer; /* Курсор при наведенні */
-  transition: background-color 0.3s; /* Анімація зміни кольору */
+  padding: 10px 15px;
+  /* Внутрішні відступи */
+  margin-left: 10px;
+  /* Відстань між полем і кнопкою */
+  background-color: #007bff;
+  /* Колір фону кнопки */
+  color: white;
+  /* Колір тексту кнопки */
+  border: none;
+  /* Без рамки */
+  border-radius: 4px;
+  /* Закруглені кути */
+  cursor: pointer;
+  /* Курсор при наведенні */
+  transition: background-color 0.3s;
+  /* Анімація зміни кольору */
 }
 
 .search-button:hover {
-  background-color: #0056b3; /* Темніший колір при наведенні */
+  background-color: #0056b3;
+  /* Темніший колір при наведенні */
 }
 
 /* Стилі для списку підказок (якщо потрібно) */
 .suggestions-list {
-  list-style: none; /* Вимкнення маркерів списку */
-  padding: 0; /* Вимкнення внутрішніх відступів */
-  margin: 5px 0 0; /* Відстань зверху */
-  border: 1px solid #ccc; /* Колір рамки списку */
-  border-radius: 4px; /* Закруглені кути */
-  max-height: 200px; /* Максимальна висота списку */
-  overflow-y: auto; /* Прокрутка при переповненні */
-  background-color: white; /* Колір фону списку */
-  z-index: 10; /* Висока позиція, щоб бути над іншими елементами */
+  list-style: none;
+  /* Вимкнення маркерів списку */
+  padding: 0;
+  /* Вимкнення внутрішніх відступів */
+  margin: 5px 0 0;
+  /* Відстань зверху */
+  border: 1px solid #ccc;
+  /* Колір рамки списку */
+  border-radius: 4px;
+  /* Закруглені кути */
+  max-height: 200px;
+  /* Максимальна висота списку */
+  overflow-y: auto;
+  /* Прокрутка при переповненні */
+  background-color: white;
+  /* Колір фону списку */
+  z-index: 10;
+  /* Висока позиція, щоб бути над іншими елементами */
 }
 
 /* Стилі для елементів списку підказок */
 .suggestions-list li {
-  padding: 10px; /* Внутрішні відступи */
-  cursor: pointer; /* Курсор при наведенні */
+  padding: 10px;
+  /* Внутрішні відступи */
+  cursor: pointer;
+  /* Курсор при наведенні */
 }
 
 .suggestions-list li:hover {
-  background-color: #f0f0f0; /* Зміна кольору фону при наведенні */
+  background-color: #f0f0f0;
+  /* Зміна кольору фону при наведенні */
 }
